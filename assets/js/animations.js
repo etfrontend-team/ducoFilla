@@ -1,20 +1,18 @@
 export default function initAnimations() {
-  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined")
-    return;
+  const els = document.querySelectorAll('[data-animate]');
+  if (!els.length) return;
 
-  gsap.registerPlugin(ScrollTrigger);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
 
-  gsap.utils.toArray("[data-animate]").forEach((el) => {
-    gsap.from(el, {
-      opacity: 0,
-      y: 40,
-      duration: 0.7,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%",
-        toggleActions: "play none none none",
-      },
-    });
-  });
+  els.forEach((el) => observer.observe(el));
 }

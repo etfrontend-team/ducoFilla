@@ -49,3 +49,20 @@ export default function initHeader() {
     });
   });
 }
+
+// Autoplay CTA video only on non-mobile (saves bandwidth)
+const video = document.getElementById('ctaVideo');
+if (video && window.matchMedia('(min-width: 768px)').matches) {
+  const videoObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          video.play();
+          videoObserver.unobserve(video);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+  videoObserver.observe(video);
+}

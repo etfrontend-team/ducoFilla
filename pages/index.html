@@ -286,6 +286,10 @@
             <div class="hero-image-wrap">
               <img
                 src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=1080"
+                srcset="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400 400w,
+                        https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=768 768w,
+                        https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=1080 1080w"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 alt="3D printing filament technology modern manufacturing" width="1080" height="720"
                 fetchpriority="high" decoding="async" class="hero-img" />
               <div class="overlay-image"></div>
@@ -839,7 +843,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400"
                   width="64" height="64" alt="PLA Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -869,7 +873,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400"
                   width="64" height="64" alt="PLA Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -899,7 +903,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400"
                   width="64" height="64" alt="PETG Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -930,7 +934,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400"
                   width="64" height="64" alt="TPU Flexible Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -961,7 +965,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400"
                   width="64" height="64" alt="Silk and Specialty Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -991,7 +995,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1638959492386-f9a68d55c374?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1638959492386-f9a68d55c374?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400"
                   width="64" height="64" alt="Silk and Specialty Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -1022,8 +1026,8 @@
     <!-- Bottom CTA bar -->
     <section class="features-cta-bar general-padding" data-animate>
       <!-- Background Video -->
-      <video class="features-cta-video" width="1920" height="1080" autoplay muted loop playsinline preload="none"
-        aria-hidden="true">
+      <video class="features-cta-video" width="1920" height="1080" muted loop playsinline preload="none"
+        aria-hidden="true" id="ctaVideo">
         <source src="https://videos.pexels.com/video-files/855255/855255-hd_1920_1080_25fps.mp4" type="video/mp4" />
       </video>
       <!-- Overlay -->
@@ -1799,8 +1803,6 @@
   <!-- ==================== /FOOTER ==================== -->
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script type="module" src="../assets/js/app.js"></script>
 </body>
