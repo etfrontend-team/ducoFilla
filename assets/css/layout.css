@@ -1,0 +1,215 @@
+/* =====================
+   LAYOUT — header, footer
+===================== */
+
+/* ---------- Header ---------- */
+
+header {
+  @apply fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/20;
+}
+header:not(.scrolled) {
+  @apply bg-white!;
+}
+header.scrolled .glass-filter {
+  @apply absolute inset-0 z-0 backdrop-blur-sm pointer-events-none;
+}
+
+header .container-fluid {
+  @apply relative z-10;
+}
+
+.header-inner {
+  @apply flex items-center justify-between py-16 max-768:py-12;
+}
+
+.header-logo-wrap {
+  @apply flex items-center gap-8;
+}
+
+.header-logo-icon {
+  @apply size-40 rounded-8 bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center shadow-lg flex-shrink-0;
+}
+
+.header-logo-name {
+  @apply font-bold text-heading-6 text-dark;
+}
+
+.header-nav {
+  @apply flex items-center gap-32 max-1024:hidden;
+}
+
+.header-nav a {
+  @apply text-16 text-dark hover:text-gray-600 transition-colors relative font-medium;
+}
+
+.header-nav a::after {
+  @apply content-[''] absolute -bottom-4 left-0 w-full border-b-2 border-primary transition-all duration-300 scale-x-0 origin-left;
+}
+
+.header-nav a:hover::after {
+  @apply scale-x-100;
+}
+
+/* Suppress underline on dropdown links */
+.nav-dropdown a::after,
+.nav-submenu a::after {
+  @apply hidden;
+}
+
+/* Nav dropdown */
+.nav-item {
+  @apply relative;
+}
+
+.nav-dropdown-trigger {
+  @apply flex items-center gap-6;
+}
+
+.nav-dropdown {
+  @apply absolute top-full left-0 mt-8 bg-white rounded-10 shadow-lg border border-gray-100 py-8 min-w-200 opacity-0 invisible transition-all duration-200 z-50;
+}
+
+.nav-item:hover > .nav-dropdown {
+  @apply opacity-100 visible;
+}
+
+.nav-dropdown-link {
+  @apply flex items-center justify-between px-16 py-10 text-14 text-gray-600 hover:bg-gray-50 hover:text-dark transition-colors whitespace-nowrap;
+}
+
+.nav-item-has-sub {
+  @apply relative;
+}
+
+.nav-submenu {
+  @apply absolute left-full top-0 bg-white rounded-10 shadow-lg border border-gray-100 py-8 min-w-200 opacity-0 invisible transition-all duration-200 z-50 max-h-500 overflow-auto;
+}
+
+.nav-item-has-sub:hover > .nav-submenu {
+  @apply opacity-100 visible;
+}
+
+/* Mobile nav accordion */
+.mobile-nav-details {
+  @apply border-b border-gray-100;
+}
+
+.mobile-nav-summary {
+  @apply flex items-center justify-between px-20 py-14 text-16 text-gray-600 hover:text-dark hover:bg-gray-50 transition-colors cursor-pointer list-none;
+}
+
+.mobile-nav-summary::-webkit-details-marker {
+  @apply hidden;
+}
+
+.mobile-nav-summary-nested {
+  @apply px-32 text-14;
+}
+
+.mobile-nav-sub a {
+  @apply block px-32 py-12 text-14 text-gray-500 hover:text-dark hover:bg-gray-50 transition-colors border-b border-gray-50;
+}
+
+.mobile-nav-sub-nested a {
+  @apply px-48;
+}
+
+.header-actions {
+  @apply flex items-center gap-8;
+}
+
+.header-icon-btn {
+  @apply p-8 rounded-8 text-dark hover:bg-gray-100 transition-colors flex items-center justify-center;
+}
+
+.header-menu-toggle {
+  @apply hidden max-1024:flex flex-col gap-6 cursor-pointer p-8;
+}
+
+.header-menu-toggle span {
+  @apply block min-w-24 border-t-2 border-dark rounded-full transition-all duration-300;
+}
+
+header.scrolled {
+  @apply shadow-md;
+}
+
+header.scrolled .glass-filter {
+  @apply bg-white/40;
+}
+
+/* Mobile nav overlay */
+.mobile-nav-overlay {
+  @apply fixed inset-0 bg-black/50 z-40 opacity-0 invisible transition-all duration-300;
+}
+
+.mobile-nav-overlay.active {
+  @apply opacity-100 visible;
+}
+
+/* Mobile nav panel */
+.mobile-nav {
+  @apply fixed top-0 left-0 h-full w-full bg-white z-50 flex flex-col -translate-x-full transition-transform duration-300 shadow-2xl overflow-hidden;
+}
+
+.mobile-nav.active {
+  @apply translate-x-0;
+}
+
+.mobile-nav-header {
+  @apply flex items-center justify-between px-20 py-16 border-b border-gray-100;
+}
+
+.mobile-nav-logo {
+  @apply max-h-36 w-auto;
+}
+
+.mobile-nav-close {
+  @apply p-8 rounded-8 text-dark hover:bg-gray-100 transition-colors flex items-center justify-center;
+}
+
+.mobile-nav-links {
+  @apply flex flex-col overflow-y-auto;
+}
+
+.mobile-nav-link {
+  @apply block px-20 py-14 text-16 text-gray-600 hover:text-dark hover:bg-gray-50 transition-colors border-b border-gray-50;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  @apply bg-dark text-gray-300;
+}
+
+.footer-top {
+  @apply pt-64 max-768:pt-40 mb-80;
+}
+
+.footer-bottom {
+  @apply py-20 flex flex-col gap-16 border-t border-gray-800;
+}
+
+.footer-bottom-bar {
+  @apply flex flex-row items-center justify-between gap-16 max-576:flex-col max-576:items-center max-576:text-center;
+}
+
+.footer-copyright {
+  @apply text-14 text-gray-500;
+}
+
+.footer-legal-links {
+  @apply flex items-center gap-12;
+}
+
+.footer-legal-link {
+  @apply text-14 text-gray-500 hover:text-white transition-colors;
+}
+
+.footer-legal-sep {
+  @apply text-gray-700 text-14;
+}
+
+.footer-social {
+  @apply flex items-center gap-16 max-992:justify-center;
+}

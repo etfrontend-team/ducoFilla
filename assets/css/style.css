@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import "tailwindcss";
+
+@import "./base.css";
+@import "./components.css";
+@import "./layout.css";
+@import "./utilities.css";
+
+@theme {
+  /* =====================
+     SPACING
+     1px base → p-4 = 4px, p-20 = 20px, etc.
+  ===================== */
+  --spacing: 1px;
+
+  /* =====================
+     BREAKPOINTS
+  ===================== */
+  --breakpoint-1920: 1921px;
+  --breakpoint-1600: 1601px;
+  --breakpoint-1512: 1513px;
+  --breakpoint-1440: 1441px;
+  --breakpoint-1366: 1367px;
+  --breakpoint-1199: 1200px;
+  --breakpoint-1024: 1025px;
+  --breakpoint-992: 993px;
+  --breakpoint-768: 769px;
+  --breakpoint-640: 641px;
+  --breakpoint-576: 577px;
+  --breakpoint-425: 426px;
+  --breakpoint-375: 376px;
+
+  /* =====================
+     COLORS
+     Extracted from React components
+  ===================== */
+
+  /* Brand */
+  --color-primary: #de1983;
+  --color-primary-hover: #ff4da6;
+  --color-primary-dark: #c01670;
+
+  /* Dark backgrounds (gray-900, gray-800) */
+  --color-dark: #111827;
+  --color-dark-2: #1f2937;
+
+  /* Text */
+  --color-text-dark: #030213;
+  --color-text-muted: #717182;
+
+  /* Grays */
+  --color-gray-600: #4b5563;
+  --color-gray-500: #6b7280;
+  --color-gray-400: #9ca3af;
+  --color-gray-300: #777777;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #f9fafb;
+
+  /* UI */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-border-light: rgba(255, 255, 255, 0.2);
+  --color-border-dark: rgba(0, 0, 0, 0.1);
+  --color-muted-bg: #f3f3f5;
+
+  /* =====================
+     FONTS
+  ===================== */
+  --font-inter: "Inter", system-ui, -apple-system, sans-serif;
+  --font-instrument-sans:
+    "Instrument Sans", system-ui, -apple-system, sans-serif;
+
+  /* =====================
+     FONT SIZES
+     Mapped from Tailwind classes used in React:
+     text-6xl=60px, text-5xl=48px, text-4xl=36px,
+     text-3xl=30px, text-2xl=24px, text-xl=20px
+  ===================== */
+  --text-heading-1: 60px;
+  --text-heading-2: 48px;
+  --text-heading-3: 36px;
+  --text-heading-4: 30px;
+  --text-heading-5: 24px;
+  --text-heading-6: 20px;
+
+  --text-18: 18px;
+  --text-16: 16px;
+  --text-14: 14px;
+  --text-12: 12px;
+
+  /* =====================
+     BORDER RADIUS
+  ===================== */
+  --radius-24: 24px;
+  --radius-16: 16px;
+  --radius-12: 12px;
+  --radius-10: 10px;
+  --radius-8: 8px;
+
+  /* =====================
+     FILTER
+  ===================== */
+  --saturate-120: 1.2;
+  --brightness-115: 1.15;
+  --backdrop-blur-2xs: 1px;
+}

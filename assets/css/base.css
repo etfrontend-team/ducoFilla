@@ -1,0 +1,141 @@
+/* =====================
+   BASE — html, body, a, headings, paragraphs,
+           containers, general-padding
+===================== */
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-instrument-sans text-text-dark antialiased;
+}
+
+a {
+  @apply no-underline transition-colors duration-300;
+}
+
+img {
+  @apply max-w-full;
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+.h1 {
+  @apply font-instrument-sans text-heading-1 leading-tight max-768:text-heading-3 font-semibold;
+}
+
+h2,
+.h2 {
+  @apply font-instrument-sans text-heading-2 leading-tight max-768:text-heading-4 font-semibold;
+}
+
+h3,
+.h3 {
+  @apply font-instrument-sans text-heading-3 leading-snug max-768:text-heading-5 font-semibold;
+}
+
+h4,
+.h4 {
+  @apply font-instrument-sans text-heading-4 leading-snug max-768:text-heading-6 font-semibold;
+}
+
+h5,
+.h5 {
+  @apply font-instrument-sans text-heading-5 leading-snug max-768:text-18 font-semibold;
+}
+
+h6,
+.h6 {
+  @apply font-instrument-sans text-heading-6 max-768:text-16 font-semibold;
+}
+
+/* ---------- Title color wrappers ---------- */
+
+.title-white h1,
+.title-white h2,
+.title-white h3,
+.title-white h4,
+.title-white h5,
+.title-white h6 {
+  @apply text-white;
+}
+
+.title-black h1,
+.title-black h2,
+.title-black h3,
+.title-black h4,
+.title-black h5,
+.title-black h6 {
+  @apply text-black;
+}
+
+.title-dark h1,
+.title-dark h2,
+.title-dark h3,
+.title-dark h4,
+.title-dark h5,
+.title-dark h6 {
+  @apply text-text-dark;
+}
+
+.title-primary h1,
+.title-primary h2,
+.title-primary h3,
+.title-primary h4,
+.title-primary h5,
+.title-primary h6 {
+  @apply text-primary;
+}
+
+.title-gradient h1,
+.title-gradient h2,
+.title-gradient h3,
+.title-gradient h4,
+.title-gradient h5,
+.title-gradient h6 {
+  @apply bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent;
+}
+
+/* ---------- Paragraph wrappers ---------- */
+
+.content p {
+  @apply text-18 leading-relaxed max-768:text-16;
+}
+
+.content p + p {
+  @apply mt-16;
+}
+
+.content-white p {
+  @apply text-white;
+}
+
+.content-gray p {
+  @apply text-gray-300;
+}
+
+.content-muted p {
+  @apply text-text-muted;
+}
+
+.content-dark p {
+  @apply text-text-dark;
+}
+
+/* ---------- Containers ---------- */
+
+.container-fluid {
+  @apply px-80 max-1199:px-40 max-768:px-20 max-425:px-16;
+}
+
+.container-fluid-sm {
+  @apply px-120 max-1199:px-60 max-768:px-20 max-425:px-16;
+}
+
+/* ---------- General padding ---------- */
+
+.general-padding {
+  @apply py-100 max-1199:py-60 max-768:py-40;
+}

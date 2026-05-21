@@ -1,0 +1,47 @@
+/* =====================
+   COMPONENTS — buttons, inputs, textarea, select
+===================== */
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  @apply inline-flex items-center justify-center gap-8 px-32 py-16 text-16 font-semibold border border-solid cursor-pointer transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-primary text-white border-primary rounded-12 shadow-lg hover:bg-primary-hover hover:border-primary-hover;
+}
+
+.btn-outline {
+  @apply bg-transparent text-white border-border-light rounded-12 hover:bg-white/20;
+}
+
+.btn-dark {
+  @apply bg-dark text-white border-dark rounded-12 hover:opacity-80;
+}
+
+/* ---------- Inputs ---------- */
+
+.form-input {
+  @apply w-full px-16 py-12 text-16 text-text-dark bg-gray-100 border border-solid border-gray-200 rounded-8 outline-none transition-all duration-300 focus:border-primary;
+}
+
+.form-textarea {
+  @apply w-full px-16 py-12 text-16 text-text-dark bg-gray-100 border border-solid border-gray-200 rounded-8 outline-none transition-all duration-300 focus:border-primary resize-none;
+}
+
+.form-select {
+  @apply w-full px-16 py-12 text-16 text-text-dark bg-gray-100 border border-solid border-gray-200 rounded-8 outline-none transition-all duration-300 focus:border-primary cursor-pointer;
+}
+
+/* ---------- Common Heading ---------- */
+
+.common-heading {
+  @apply mb-48 max-768:mb-32 text-center;
+}
+
+/* ---------- Button Shrink ---------- */
+
+.btn-shrink {
+  @apply flex-shrink-0;
+}

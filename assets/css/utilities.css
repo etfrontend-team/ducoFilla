@@ -1,0 +1,938 @@
+/* =====================
+   UTILITIES — section backgrounds, section-specific & helpers
+===================== */
+
+/* =====================
+   SECTION BACKGROUNDS
+===================== */
+
+.hero-section {
+  @apply relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-dark via-dark-2 to-dark pt-160 max-768:pt-100 pb-80;
+}
+
+.trusted-section {
+  @apply relative overflow-hidden bg-gradient-to-br from-pink-50/40 via-white to-purple-50/30;
+}
+
+.about-section {
+  @apply bg-white;
+}
+
+.product-section {
+  /* @apply relative overflow-hidden bg-gradient-to-br from-dark via-dark-2 to-dark; */
+  @apply relative overflow-hidden bg-gradient-to-br from-pink-100 via-white to-rose-50;
+}
+
+.features-section {
+  @apply bg-gradient-to-br from-gray-50 via-pink-50/30 to-gray-50;
+}
+
+.process-section {
+  @apply relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white hidden;
+}
+
+.testimonials-section {
+  @apply relative overflow-hidden bg-gradient-to-br from-pink-100 via-white to-rose-50 border-t border-b border-gray-100;
+}
+
+.testimonials-glow {
+  @apply absolute pointer-events-none size-500 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(222,25,131,0.12),transparent_70%)];
+}
+
+.testimonials-glow-tr {
+  @apply -top-100 -right-100;
+}
+
+.testimonials-glow-bl {
+  @apply -bottom-100 -left-100;
+}
+
+.faq-section {
+  @apply bg-gradient-to-br from-white via-gray-50 to-white;
+}
+
+.cta-section {
+  @apply relative overflow-hidden bg-gradient-to-br from-primary via-primary-dark to-primary;
+}
+
+.category-section {
+  @apply relative overflow-hidden;
+}
+
+/* =====================
+   GRADIENT TEXT
+===================== */
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent;
+}
+
+/* =====================
+   GLASS CARD
+===================== */
+
+.glass-card {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-16;
+}
+
+/* =====================
+   WHITE CARD
+===================== */
+
+.white-card {
+  @apply bg-white rounded-24 shadow-xl p-32 max-768:p-24;
+}
+
+/* =====================
+   BADGE
+===================== */
+
+.badge {
+  @apply inline-flex items-center gap-8 px-16 py-8 rounded-full text-14 font-medium;
+}
+
+.badge-primary {
+  @apply bg-primary/10 text-primary border border-primary/20;
+}
+
+.badge-white {
+  @apply bg-white/10 text-white border border-white/20 backdrop-blur-sm;
+}
+
+/* =====================
+   ANIMATED DOT
+===================== */
+
+.dot-pulse {
+  @apply inline-block w-8 h-8 rounded-full bg-primary animate-pulse flex-shrink-0;
+}
+
+/* =====================
+   DECORATIVE BLOBS
+===================== */
+
+.blob {
+  @apply absolute rounded-full blur-3xl pointer-events-none;
+}
+
+/* Hero blobs */
+.blob-hero-1 {
+  @apply w-96 h-96 bg-primary/20 -top-1/2 -right-1/4;
+}
+
+.blob-hero-2 {
+  @apply w-96 h-96 bg-purple-500/20 -bottom-1/2 -left-1/4;
+}
+
+/* TrustedBy blobs */
+.blob-trusted-1 {
+  @apply w-96 h-96 bg-primary/10 top-0 right-1/4;
+}
+
+.blob-trusted-2 {
+  @apply w-96 h-96 bg-pink-500/10 bottom-0 left-1/4;
+}
+
+/* ProductSlider blobs */
+.blob-products-1 {
+  @apply w-96 h-96 bg-primary/10 top-1/4 left-0;
+}
+
+.blob-products-2 {
+  @apply w-96 h-96 bg-purple-500/10 bottom-1/4 right-0;
+}
+
+/* Process blobs */
+.blob-process-1 {
+  @apply w-72 h-72 bg-primary/10 top-1/4 left-0 opacity-50;
+}
+
+.blob-process-2 {
+  @apply w-72 h-72 bg-purple-200/30 bottom-1/4 right-0 opacity-50;
+}
+
+/* Testimonials blobs */
+.blob-testimonials-1 {
+  @apply w-96 h-96 bg-primary top-0 left-1/4 opacity-10;
+}
+
+.blob-testimonials-2 {
+  @apply w-96 h-96 bg-purple-500 bottom-0 right-1/4 opacity-10;
+}
+
+/* CTA blobs */
+.blob-cta-1 {
+  @apply w-96 h-96 bg-white/10 top-0 left-1/4;
+}
+
+.blob-cta-2 {
+  @apply w-96 h-96 bg-purple-500/20 bottom-0 right-1/4;
+}
+
+/* =====================
+   OVERLAY
+===================== */
+
+.overlay-dark-bottom {
+  @apply absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none;
+}
+
+.overlay-image {
+  @apply absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 pointer-events-none;
+}
+
+/* =====================
+   ICON BOX
+===================== */
+
+.icon-box {
+  @apply w-56 h-56 rounded-16 flex items-center justify-center flex-shrink-0;
+}
+
+.icon-box-primary {
+  @apply bg-gradient-to-br from-primary to-primary-hover shadow-lg;
+}
+
+.icon-box-soft {
+  @apply bg-gradient-to-br from-primary/10 to-pink-100/50;
+}
+
+/* =====================
+   STEP / PROCESS
+===================== */
+
+.step-badge {
+  @apply absolute -top-16 -right-16 w-48 h-48 rounded-full bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center shadow-lg text-white font-bold text-16;
+}
+
+.step-progress-bar {
+  @apply flex-1 h-8 bg-gray-100 rounded-full overflow-hidden;
+}
+
+.step-progress-fill {
+  @apply h-full w-full bg-gradient-to-r from-primary to-primary-hover rounded-full;
+}
+
+/* =====================
+   PROCESS CONNECTOR LINE
+===================== */
+
+.process-line {
+  @apply hidden max-992:hidden absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary/30 via-pink-300/30 to-purple-300/30 -translate-y-1/2 pointer-events-none;
+}
+
+/* =====================
+   CATEGORY CARDS
+===================== */
+
+.category-card {
+  @apply relative block rounded-24 overflow-hidden transition-all duration-300 cursor-pointer no-underline;
+}
+
+.category-card-glow {
+  @apply absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-300 bg-[radial-gradient(ellipse_at_center,rgba(222,25,131,0.3),transparent_70%)];
+}
+
+.category-card-glow--orange {
+  @apply bg-[radial-gradient(ellipse_at_center,rgba(234,88,12,0.3),transparent_70%)];
+}
+
+.category-card-glow--cyan {
+  @apply bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.3),transparent_70%)];
+}
+
+.category-card-glow--purple {
+  @apply bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.3),transparent_70%)];
+}
+
+.category-card-glow--rose {
+  @apply bg-[radial-gradient(ellipse_at_center,rgba(236,72,153,0.3),transparent_70%)];
+}
+
+.category-card-glow--green {
+  @apply bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.3),transparent_70%)];
+}
+
+.category-card:hover .category-card-glow {
+  @apply opacity-100;
+}
+
+.category-card-inner {
+  @apply h-full relative flex flex-col gap-20 p-28 bg-white border border-gray-200 rounded-24 shadow-sm transition-all duration-300 max-768:p-20;
+}
+
+.category-card:hover .category-card-inner {
+  @apply border-primary/50 shadow-lg shadow-pink-500/10 -translate-y-4 bg-primary/3;
+}
+
+.category-img-box {
+  @apply w-full h-250 rounded-10 overflow-hidden shrink-0 shadow-lg transition-transform duration-300;
+}
+
+.category-img-box img {
+  @apply w-full h-full object-cover;
+}
+
+.category-card-content {
+  @apply flex-1 min-w-0 flex flex-col;
+}
+.category-card-content p {
+  @apply mb-12;
+}
+
+.category-card-meta {
+  @apply flex items-center justify-between mt-auto;
+}
+
+.category-count {
+  @apply text-12 font-semibold px-10 py-4 rounded-full border border-gray-200 text-gray-500 bg-gray-50;
+}
+
+.category-arrow {
+  @apply w-32 h-32 rounded-full flex items-center justify-center text-gray-400 border border-gray-200 bg-gray-50 transition-all duration-300;
+}
+
+.category-card:hover .category-arrow {
+  @apply text-primary border-primary/40 bg-primary/10;
+}
+
+/* =====================
+   PRODUCT CARD
+===================== */
+
+.product-card {
+  @apply bg-white backdrop-blur-md border border-gray-200 rounded-24 overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-2xl;
+}
+
+.product-card-img-wrap {
+  @apply relative overflow-hidden bg-gradient-to-br from-dark to-dark-2;
+}
+
+.product-card-img-wrap img {
+  @apply w-full object-cover transition-transform duration-500;
+  height: 256px; /* height: fixed for consistent card layout */
+}
+
+.product-card:hover .product-card-img-wrap img {
+  @apply scale-110;
+}
+
+/* Hover action buttons */
+.product-hover-actions {
+  @apply absolute bottom-16 left-0 right-0 flex items-center justify-center gap-8 opacity-0 translate-y-8 transition-all duration-300 z-10;
+}
+
+.product-card:hover .product-hover-actions {
+  @apply opacity-100 translate-y-0;
+}
+
+.btn-quick-view {
+  @apply px-16 py-10 bg-white text-dark text-12 font-semibold rounded-full hover:bg-gray-100 transition-colors cursor-pointer whitespace-nowrap;
+}
+
+.btn-add-cart {
+  @apply px-16 py-10 bg-primary text-white text-12 font-semibold rounded-full hover:bg-primary-hover transition-colors cursor-pointer whitespace-nowrap;
+}
+
+.product-category-badge {
+  @apply absolute top-16 left-16 px-12 py-4 bg-primary/90 backdrop-blur-sm text-white text-12 font-semibold rounded-full;
+}
+
+.product-card-body {
+  @apply p-24 max-768:p-16;
+}
+
+.product-rating {
+  @apply flex items-center gap-8 mb-16;
+}
+
+.product-price-wrap {
+  @apply flex items-center gap-12 mb-16;
+}
+
+.product-price-old {
+  @apply text-16 font-medium text-gray-400 line-through;
+}
+
+.product-price {
+  @apply text-16 font-bold bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent;
+}
+
+.product-colors {
+  @apply flex flex-wrap gap-8 mt-8;
+}
+
+.product-color-chip {
+  @apply px-8 py-4 bg-white/5 border border-white/10 text-gray-300 rounded-8 text-12;
+}
+
+.product-features {
+  @apply pt-16 border-t border-white/10 mt-16;
+}
+
+.product-feature-item {
+  @apply flex items-center gap-8 text-14 text-gray-300 mb-8;
+}
+
+.product-feature-dot {
+  @apply w-6 h-6 rounded-full bg-primary flex-shrink-0;
+}
+
+/* =====================
+   FEATURE CARD
+===================== */
+
+.feature-card {
+  @apply h-full p-32 bg-white rounded-24 border border-gray-200 hover:border-primary/30 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300 relative overflow-hidden max-768:p-24;
+}
+
+.feature-card-icon {
+  @apply w-56 h-56 rounded-16 bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center mb-24 shadow-lg transition-shadow;
+}
+
+.feature-card:hover .feature-card-icon {
+  @apply shadow-lg shadow-pink-500/50;
+}
+
+.feature-card-deco {
+  @apply absolute top-0 right-0 w-80 h-80 bg-gradient-to-br from-primary/10 to-purple-100/10 rounded-bl-full opacity-0 transition-opacity;
+}
+
+.feature-card:hover .feature-card-deco {
+  @apply opacity-100;
+}
+
+/* =====================
+   PROCESS CARD
+===================== */
+
+.process-card {
+  @apply relative z-10 bg-white p-32 rounded-24 border border-gray-200 hover:border-primary/30 hover:shadow-xl hover:shadow-pink-500/10 transition-all max-768:p-24;
+}
+
+.process-card-icon {
+  @apply w-64 h-64 rounded-16 bg-gradient-to-br from-primary/10 to-pink-100/50 flex items-center justify-center mb-24 transition-shadow;
+}
+
+.process-card:hover .process-card-icon {
+  @apply shadow-md;
+}
+
+/* =====================
+   TESTIMONIAL CARD
+===================== */
+
+.testimonial-card {
+  @apply bg-white rounded-24 p-48 border border-gray-200 shadow-xl shadow-gray-200/50 max-768:p-32;
+}
+
+.testimonial-quote-icon {
+  @apply w-48 h-48 text-primary mb-24;
+}
+
+.testimonial-stars {
+  @apply flex items-center gap-4 mb-24;
+}
+
+.testimonial-text {
+  @apply text-heading-5 text-text-dark leading-relaxed mb-32 max-768:text-18;
+}
+
+.testimonial-author {
+  @apply flex items-center gap-16;
+}
+
+.testimonial-avatar {
+  @apply w-64 h-64 rounded-full border-2 border-gray-200 object-cover;
+}
+
+/* =====================
+   TRUST STATS
+===================== */
+
+.trust-stats-section {
+  @apply bg-gradient-to-br from-white via-gray-50 to-white;
+}
+
+.trust-stat {
+  @apply text-center;
+}
+
+.trust-stat-icon {
+  @apply flex items-center justify-center mb-20 text-dark max-576:mb-12;
+}
+.trust-stat-icon svg {
+  @apply text-primary max-992:w-36 max-992:h-36;
+}
+
+.trust-stat-value {
+  @apply text-heading-3 max-992:text-heading-5 max-576:text-heading-6  font-bold text-text-dark mb-8 max-768:text-heading-4;
+}
+
+.trust-stat-label {
+  @apply text-14 text-text-muted;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+/* Footer flex columns */
+.footer-cols {
+  @apply flex flex-row items-start justify-between gap-48 max-992:flex-col max-992:items-center max-992:gap-40;
+}
+
+.footer-col-brand {
+  @apply flex flex-col max-w-280 max-992:items-start max-992:max-w-full;
+}
+
+.footer-col {
+  @apply flex flex-col max-992:items-center max-992:text-center 992:max-w-350;
+}
+
+.footer-logo {
+  @apply flex items-center gap-8 mb-24 max-992:justify-center max-992:mx-auto;
+}
+
+footer .content-gray p {
+  @apply text-gray-400;
+}
+.footer-logo-icon {
+  @apply w-40 h-40 rounded-8 bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center shadow-lg flex-shrink-0;
+}
+
+.footer-logo-text {
+  @apply font-bold text-heading-6 text-white;
+}
+
+.footer-logo-img {
+  @apply h-48 w-auto object-contain;
+}
+
+.footer-contact-item {
+  @apply flex items-start gap-12 text-14 text-gray-400 mb-12 max-992:justify-start max-992:text-start;
+}
+
+.footer-contact-icon {
+  @apply w-20 h-20 text-primary flex-shrink-0 mt-2;
+}
+
+.footer-nav-title {
+  @apply font-semibold text-white text-16 mb-16;
+}
+
+.footer-nav-list {
+  @apply flex flex-col gap-12;
+}
+
+.footer-nav-link {
+  @apply text-14 text-gray-400 hover:text-white transition-colors;
+}
+
+.footer-newsletter {
+  @apply py-52 border-t border-b border-gray-800;
+}
+.footer-social {
+  @apply mx-auto;
+}
+.footer-social-link {
+  @apply w-40 h-40 mt-15 bg-gray-800 rounded-8 flex items-center justify-center text-gray-400 hover:text-white hover:bg-gradient-to-br hover:from-primary hover:to-primary-hover transition-all;
+}
+.footer-social-link svg {
+  @apply w-18 h-18;
+}
+
+/* =====================
+   LOGO INITIALS SPAN
+===================== */
+
+.logo-initials {
+  @apply text-white font-black text-16;
+}
+
+/* =====================
+   FOOTER NEWSLETTER INPUT
+===================== */
+
+.footer-newsletter-input {
+  @apply w-full h-50 px-12 py-4 text-16 border border-solid rounded-8 outline-none transition-all duration-300 focus:border-primary bg-dark-2 border-gray-700 text-white;
+}
+
+.footer-newsletter-input::placeholder {
+  @apply text-gray-500;
+}
+
+/* =====================
+   TRUST GRID (5-col)
+===================== */
+
+.trust-cards-grid {
+  @apply grid grid-cols-5 gap-24 max-1024:grid-cols-3 max-768:grid-cols-2 mx-auto max-w-1300;
+}
+
+/* =====================
+   HEADER LOGO
+===================== */
+
+.header-logo-img {
+  @apply h-50 w-auto object-contain transition-all duration-300 ease-linear;
+}
+header.scrolled .header-logo-img {
+  @apply h-50;
+}
+
+/* =====================
+   ABOUT IMAGE GRID
+===================== */
+
+.about-img-grid {
+  @apply relative;
+}
+
+.about-img-cell {
+  @apply relative rounded-24 overflow-hidden shadow-lg;
+}
+
+.about-img-cell img {
+  @apply w-full h-full object-cover max-h-350;
+  /* height: 256px; */
+}
+
+.about-img-cell-offset {
+  @apply mt-32;
+}
+
+.about-img-cell-wide {
+  @apply col-span-2;
+}
+
+.btn-white-primary {
+  @apply bg-white text-primary border-white rounded-12 hover:bg-white/90;
+}
+
+.about-value-card {
+  @apply p-24 bg-white rounded-16 border border-gray-200 hover:border-primary/30 hover:shadow-lg hover:shadow-pink-500/10 transition-all;
+}
+
+.about-value-icon {
+  @apply w-48 h-48 rounded-8 bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center mb-16 shadow-lg shadow-pink-500/20;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero-content {
+  @apply relative max-w-7xl mx-auto;
+}
+
+.hero-badge {
+  @apply inline-flex items-center gap-8 px-16 py-8 bg-primary/10 text-primary border border-primary/20 rounded-full text-14 font-medium backdrop-blur-sm mb-32;
+}
+
+.hero-title-wrap {
+  @apply mb-16;
+}
+
+.hero-desc {
+  @apply text-18 text-gray-300 max-w-xl mb-32 max-768:text-16;
+}
+
+.hero-btns {
+  @apply flex flex-wrap gap-16 mb-32;
+}
+
+.hero-image-wrap {
+  @apply relative rounded-24 overflow-hidden shadow-2xl;
+}
+
+.hero-floating-card {
+  @apply absolute bottom-24 left-24 backdrop-blur-md border border-white/10 rounded-16 shadow-2xl p-20 max-768:p-16;
+}
+
+.hero-float-icon {
+  @apply w-48 h-48 rounded-10 bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center shadow-lg flex-shrink-0;
+}
+
+.hero-float-title {
+  @apply text-16 font-bold text-white;
+}
+
+.hero-float-sub {
+  @apply text-12 text-gray-400 mt-2;
+}
+
+.hero-grid {
+  @apply grid grid-cols-2 gap-48 items-center max-768:grid-cols-1 max-768:gap-32;
+}
+
+.hero-image-col {
+  @apply relative;
+}
+
+.hero-img {
+  @apply w-full;
+}
+
+.hero-floating-inner {
+  @apply flex items-center gap-16;
+}
+
+/* =====================
+   TRUSTED BY
+===================== */
+
+.trust-badge-wrap {
+  @apply text-center mb-44;
+}
+
+.trust-pill {
+  @apply inline-block px-24 py-10 bg-gradient-to-r from-primary/10 via-pink-500/10 to-purple-500/10 border border-primary/20 rounded-full shadow-lg shadow-pink-500/10;
+}
+
+.trust-pill-text {
+  @apply text-14 font-semibold bg-gradient-to-r from-primary via-pink-600 to-purple-600 bg-clip-text text-transparent uppercase tracking-wider;
+}
+
+.trust-card {
+  @apply relative;
+}
+
+.trust-card-glow {
+  @apply absolute inset-0 bg-gradient-to-br from-primary/20 to-pink-500/20 rounded-24 blur-xl opacity-0 transition-all duration-300;
+}
+
+.trust-card:hover .trust-card-glow {
+  @apply opacity-100;
+}
+
+.trust-card-inner {
+  @apply relative flex flex-col items-center justify-center p-24 rounded-24 border shadow-lg shadow-pink-500/5 transition-all duration-300 overflow-hidden;
+}
+
+.trust-card:hover .trust-card-inner {
+  @apply shadow-2xl shadow-pink-500/20;
+}
+
+.trust-card-deco-dot-1 {
+  @apply absolute top-8 right-8 w-8 h-8 rounded-full opacity-50 transition-opacity bg-gradient-to-br from-primary to-pink-400;
+}
+
+.trust-card:hover .trust-card-deco-dot-1 {
+  @apply opacity-100;
+}
+
+.trust-card-deco-dot-2 {
+  @apply absolute bottom-8 left-8 w-6 h-6 rounded-full opacity-30 transition-opacity bg-gradient-to-br from-purple-500 to-pink-400;
+}
+
+.trust-card:hover .trust-card-deco-dot-2 {
+  @apply opacity-70;
+}
+
+.trust-card-shine {
+  @apply absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 opacity-0 transition-opacity rounded-24;
+}
+
+.trust-card:hover .trust-card-shine {
+  @apply opacity-100;
+}
+
+.trust-card-inner--blue {
+  @apply bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-300/50;
+}
+
+.trust-card-inner--orange {
+  @apply bg-gradient-to-br from-orange-50 to-yellow-50 border-orange-300/50;
+}
+
+.trust-card-inner--purple {
+  @apply bg-gradient-to-br from-purple-50 to-pink-50 border-purple-300/50;
+}
+
+.trust-card-inner--green {
+  @apply bg-gradient-to-br from-green-50 to-emerald-50 border-green-300/50;
+}
+
+.trust-card-inner--pink {
+  @apply bg-gradient-to-br from-pink-50 to-rose-50 border-pink-300/50;
+}
+
+.trust-card-content {
+  @apply text-center;
+}
+
+.trust-card-gradient-text {
+  @apply bg-clip-text text-transparent;
+}
+
+.trust-card-gradient-text--blue {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600;
+}
+.trust-card-gradient-text--orange {
+  @apply bg-gradient-to-r from-orange-600 to-amber-600;
+}
+.trust-card-gradient-text--purple {
+  @apply bg-gradient-to-r from-purple-600 to-pink-600;
+}
+.trust-card-gradient-text--green {
+  @apply bg-gradient-to-r from-green-600 to-emerald-600;
+}
+.trust-card-gradient-text--pink {
+  @apply bg-gradient-to-r from-primary to-primary-hover;
+}
+
+.trust-card-text-12 {
+  @apply text-12;
+}
+.trust-card-label {
+  @apply text-18 font-black uppercase;
+}
+.trust-card-label--tight {
+  @apply tracking-tight;
+}
+.trust-card-sublabel {
+  @apply text-12 font-bold uppercase tracking-wider;
+}
+
+.trust-bottom-pill {
+  @apply mt-34 text-center;
+}
+
+.trust-bottom-inner {
+  @apply inline-block px-32 py-16 bg-white/60 backdrop-blur-sm rounded-24 border border-pink-200/30 shadow-lg shadow-pink-500/10;
+}
+
+/* =====================
+   FEATURES BOTTOM CTA BAR
+===================== */
+
+.features-cta-bar {
+  @apply min-h-600 flex text-center text-white shadow-2xl shadow-pink-500/20 relative overflow-hidden;
+}
+
+.features-cta-video {
+  @apply absolute inset-0 w-full h-full object-cover z-0;
+}
+
+.features-cta-overlay {
+  @apply absolute inset-0 z-10 bg-gradient-to-br from-primary/75 to-dark/85;
+}
+
+.features-cta-content {
+  @apply relative px-48 max-768:px-32 my-auto 1440:max-w-768! z-20 mx-auto;
+}
+
+/* =====================
+   PROCESS BOTTOM STATS
+===================== */
+
+.process-stats-bar {
+  @apply mt-64 grid grid-cols-4 gap-32 p-32 bg-gradient-to-br from-pink-50/30 to-purple-50/30 rounded-24 border border-pink-100/50 max-768:grid-cols-2 max-768:gap-24 max-768:p-24;
+}
+
+.process-stat-item {
+  @apply text-center;
+}
+
+.process-stat-value {
+  @apply text-heading-3 font-bold text-text-dark mb-8 max-768:text-heading-4;
+}
+
+.process-stat-label {
+  @apply text-14 text-gray-600;
+}
+
+/* =====================
+   SWIPER — PRODUCT SLIDER
+===================== */
+
+/* Wrapper: flex row with nav buttons on sides */
+.product-slider-wrap {
+  @apply flex items-center gap-16;
+}
+
+.product-slider-wrap .swiper {
+  @apply flex-1 min-w-0;
+}
+
+.product-nav-btn {
+  @apply flex-shrink-0 w-48 h-48 rounded-full bg-white border border-gray-200 shadow-md text-dark flex items-center justify-center transition-all duration-300 hover:bg-primary hover:border-primary hover:text-white hover:shadow-lg hover:shadow-pink-500/20 max-768:hidden cursor-pointer;
+}
+
+/* Dots */
+.product-swiper .swiper-pagination {
+  @apply relative mt-40;
+}
+
+.product-swiper .swiper-pagination-bullet {
+  @apply w-8 h-8 rounded-full bg-gray-300 opacity-100 transition-all duration-300;
+}
+
+.product-swiper .swiper-pagination-bullet-active {
+  @apply bg-primary w-32 rounded;
+}
+
+/* =====================
+   SWIPER — TESTIMONIALS
+===================== */
+
+.testimonials-swiper .swiper-pagination-bullet {
+  @apply bg-gray-300 opacity-100 transition-all duration-300;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  @apply bg-primary w-32 rounded;
+}
+
+/* =====================
+   FAQ BOTTOM CTA
+===================== */
+
+.faq-cta-box {
+  @apply mt-48 text-center p-32 bg-gradient-to-br from-pink-50/50 to-purple-50/50 border border-pink-100/50 rounded-24;
+}
+
+/* =====================
+   PRODUCT RATING
+===================== */
+
+.product-rating-value {
+  @apply text-dark font-semibold text-14;
+}
+
+.product-rating-count {
+  @apply text-gray-400 text-14;
+}
+
+/* =====================
+   ACCESSIBILITY
+===================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* =====================
+   TRUST STATS GRID
+===================== */
+
+.trust-stats-grid {
+  @apply grid grid-cols-4 gap-32 text-center max-768:grid-cols-2 max-768:gap-24;
+}
+
+/* =====================
+   CONTENT FADED
+===================== */
+
+.content-faded {
+  @apply opacity-90;
+}
