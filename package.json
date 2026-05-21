@@ -21,6 +21,8 @@
     ]
   },
   "dependencies": {
+    "@fontsource-variable/instrument-sans": "^5.2.8",
+    "@fontsource-variable/inter": "^5.2.8",
     "@tailwindcss/cli": "^4.3.0",
     "tailwindcss": "^4.3.0"
   },

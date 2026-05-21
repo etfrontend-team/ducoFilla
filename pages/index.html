@@ -19,14 +19,18 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://duchofilla.com/" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <!-- Preconnect CDN -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <!-- Local fonts preload -->
+  <link rel="preload" href="../assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/instrument-sans-variable.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper CSS — load async, non-blocking -->
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /></noscript>
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="../dist/style.css" />
@@ -281,9 +285,9 @@
           <div class="hero-image-col" data-animate>
             <div class="hero-image-wrap">
               <img
-                src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                alt="3D printing filament technology modern manufacturing" width="1080" height="720" loading="lazy"
-                class="hero-img" />
+                src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=1080"
+                alt="3D printing filament technology modern manufacturing" width="1080" height="720"
+                fetchpriority="high" decoding="async" class="hero-img" />
               <div class="overlay-image"></div>
             </div>
 
@@ -550,17 +554,17 @@
             <div class="grid grid-cols-2 gap-16">
               <div class="about-img-cell">
                 <img
-                  src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                  src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=600"
                   alt="3D printing filament manufacturing process" width="600" height="400" loading="lazy" />
               </div>
               <div class="about-img-cell about-img-cell-offset">
                 <img
-                  src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                  src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=600"
                   alt="Advanced 3D printing technology" width="600" height="400" loading="lazy" />
               </div>
               <div class="about-img-cell about-img-cell-wide">
                 <img
-                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                   alt="Quality control inspection of 3D printing filament" width="800" height="400" loading="lazy" />
               </div>
             </div>
@@ -606,7 +610,7 @@
                 <div class="product-card">
                   <div class="product-card-img-wrap">
                     <img
-                      src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                      src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                       alt="PLA Pro Premium 3D printing filament spool" width="800" height="400" loading="lazy" />
                     <div class="overlay-dark-bottom"></div>
                     <div class="product-category-badge">PLA Series</div>
@@ -645,7 +649,7 @@
                 <div class="product-card">
                   <div class="product-card-img-wrap">
                     <img
-                      src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                      src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                       alt="ABS Pro Tuff 3D printing filament spool" width="800" height="400" loading="lazy" />
                     <div class="overlay-dark-bottom"></div>
                     <div class="product-category-badge">ABS Series</div>
@@ -684,7 +688,7 @@
                 <div class="product-card">
                   <div class="product-card-img-wrap">
                     <img
-                      src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                      src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                       alt="PLA Silk premium 3D printing filament" width="800" height="400" loading="lazy" />
                     <div class="overlay-dark-bottom"></div>
                     <div class="product-category-badge">PLA Series</div>
@@ -723,7 +727,7 @@
                 <div class="product-card">
                   <div class="product-card-img-wrap">
                     <img
-                      src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                      src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                       alt="Flexible TPU specialty 3D printing filament" width="800" height="400" loading="lazy" />
                     <div class="overlay-dark-bottom"></div>
                     <div class="product-category-badge">Specialty</div>
@@ -762,7 +766,7 @@
                 <div class="product-card">
                   <div class="product-card-img-wrap">
                     <img
-                      src="https://images.unsplash.com/photo-1638959492386-f9a68d55c374?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                      src="https://images.unsplash.com/photo-1638959492386-f9a68d55c374?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                       alt="PETG Pro specialty 3D printing filament" width="800" height="400" loading="lazy" />
                     <div class="overlay-dark-bottom"></div>
                     <div class="product-category-badge">Specialty</div>
@@ -835,7 +839,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                   width="64" height="64" alt="PLA Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -865,7 +869,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                   width="64" height="64" alt="PLA Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -895,7 +899,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                   width="64" height="64" alt="PETG Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -926,7 +930,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                   width="64" height="64" alt="TPU Flexible Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -957,7 +961,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                   width="64" height="64" alt="Silk and Specialty Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -987,7 +991,7 @@
             <div class="category-card-inner">
               <div class="category-img-box">
                 <img
-                  src="https://images.unsplash.com/photo-1638959492386-f9a68d55c374?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1638959492386-f9a68d55c374?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
                   width="64" height="64" alt="Silk and Specialty Filaments" loading="lazy" />
               </div>
               <div class="category-card-content">
@@ -1795,9 +1799,9 @@
   <!-- ==================== /FOOTER ==================== -->
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script type="module" src="../assets/js/app.js"></script>
 </body>
 
