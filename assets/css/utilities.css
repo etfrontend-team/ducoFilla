@@ -635,7 +635,10 @@ header.scrolled .header-logo-img {
 }
 
 .hero-desc {
-  @apply text-18 text-gray-300 max-w-xl mb-32 max-768:text-16;
+  @apply text-18 max-w-xl mb-32 max-768:text-16;
+}
+.hero-desc .content-gray p {
+  @apply text-gray-400!;
 }
 
 .hero-btns {
