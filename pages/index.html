@@ -3,150 +3,145 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="India's first ISO 9001-2015 certified 3D printer filament manufacturer. Premium quality filaments with ±0.02mm precision for perfect prints, every time." />
-  <title>DuchoFilla — Premium 3D Printing Filaments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>DuchoFilla</title>
+  <meta name="robots" content="max-image-preview:large" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://duchofilla.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="DuchoFilla — Premium 3D Printing Filaments" />
-  <meta property="og:description"
-    content="India's first ISO 9001-2015 certified 3D printer filament manufacturer. Premium quality filaments with ±0.02mm precision for perfect prints, every time." />
-  <meta property="og:image" content="https://duchofilla.com/assets/images/logo.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://duchofilla.com/" />
 
   <!-- Preconnect CDN -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
   <!-- Local fonts preload -->
-  <link rel="preload" href="../assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="../assets/fonts/instrument-sans-variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/InstrumentSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/InstrumentSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
-  <!-- Swiper CSS — load async, non-blocking -->
-  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /></noscript>
-
   <!-- Main CSS -->
   <link rel="stylesheet" href="../dist/style.css" />
 </head>
 
 <body>
-  <!-- ==================== HEADER ==================== -->
-  <header>
-    <div class="glass-filter"></div>
-    <div class="container-fluid">
-      <div class="header-inner">
-        <!-- Logo -->
-        <a href="/" role="link" target="_self" aria-label="DuchoFilla home" class="header-logo-wrap">
-          <img src="../assets/images/logo.png" alt="DuchoFilla logo" width="160" height="48" loading="lazy"
-            class="header-logo-img" />
-        </a>
-
-        <!-- Desktop Nav -->
-        <nav class="header-nav" aria-label="Main navigation">
-          <a href="/" role="link" target="_self" aria-label="Go to Home">Home</a>
-          <a href="#about" role="link" target="_self" aria-label="Go to About section">About</a>
-          <a href="#" role="link" target="_self" aria-label="Learn about 3D Printing">What is 3D Printing?</a>
-          <div class="nav-item">
-            <a href="#products" role="link" target="_self" aria-label="Browse Our Products"
-              class="nav-dropdown-trigger">
-              Our Products
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </a>
-            <div class="nav-dropdown">
-              <a href="#products" role="link" target="_self" aria-label="View 3D Printer Industrial products"
-                class="nav-dropdown-link">3D Printer Industrial</a>
-              <div class="nav-item nav-item-has-sub">
-                <a href="#products" role="link" target="_self" aria-label="Browse Filament Category"
-                  class="nav-dropdown-link nav-has-sub-trigger">
-                  Filament Category
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <div class="glass-filter"></div>
+        <div class="container-fluid">
+            <div class="header-inner">
+                <!-- Logo -->
+                <a href="./index.html" role="link" target="_self" aria-label="DuchoFilla home" class="header-logo-wrap">
+                    <img src="../assets/images/logo.png" alt="DuchoFilla logo" width="160" height="48" loading="lazy"
+                        class="header-logo-img" />
                 </a>
-                <div class="nav-submenu">
-                  <a href="#products" role="link" target="_self" aria-label="View ABS filament"
-                    class="nav-dropdown-link">ABS</a>
-                  <a href="#products" role="link" target="_self" aria-label="View ABS+ filament"
-                    class="nav-dropdown-link">ABS+</a>
-                  <a href="#products" role="link" target="_self" aria-label="View ABS+ Pro's Tuff filament"
-                    class="nav-dropdown-link">ABS+ Pro's Tuff</a>
-                  <a href="#products" role="link" target="_self" aria-label="View ABS Flame Retardant filament"
-                    class="nav-dropdown-link">ABS Flame Retardant</a>
-                  <a href="#products" role="link" target="_self" aria-label="View Flexible filament"
-                    class="nav-dropdown-link">Flexible</a>
-                  <a href="#products" role="link" target="_self" aria-label="View HIPS filament"
-                    class="nav-dropdown-link">HIPS</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PLA Glow in Dark filament"
-                    class="nav-dropdown-link">PLA — Glow in Dark</a>
-                  <a href="#products" role="link" target="_self" aria-label="View Nylon filament"
-                    class="nav-dropdown-link">Nylon</a>
-                  <a href="#products" role="link" target="_self" aria-label="View Pet-C filament"
-                    class="nav-dropdown-link">Pet-C</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PC Blender filament"
-                    class="nav-dropdown-link">PC Blender</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PLA filament"
-                    class="nav-dropdown-link">PLA</a>
-                  <a href="#products" role="link" target="_self" aria-label="View D-Glass filament"
-                    class="nav-dropdown-link">D-Glass</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PLA Silk filament"
-                    class="nav-dropdown-link">PLA Silk</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PLA+ Pro's filament"
-                    class="nav-dropdown-link">PLA+ Pro's</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PLA+ Pro's Glitter filament"
-                    class="nav-dropdown-link">PLA+ Pro's Glitter</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PLA+ Pros Antique filament"
-                    class="nav-dropdown-link">PLA+ Pros Antique</a>
-                  <a href="#products" role="link" target="_self" aria-label="View PLA+ Pro's Special filament"
-                    class="nav-dropdown-link">PLA+ Pro's Special</a>
+
+                <!-- Desktop Nav -->
+                <nav class="header-nav" aria-label="Main navigation">
+                    <a href="./index.html" role="link" target="_self" aria-label="Go to Home">Home</a>
+                    <a href="./about.html" role="link" target="_self" aria-label="Go to About section">About</a>
+                    <a href="./index.html#about" role="link" target="_self" aria-label="Learn about 3D Printing">What is 3D Printing?</a>
+                    <div class="nav-item">
+                        <a href="product-listing.html" role="link" target="_self" aria-label="Browse Our Products"
+                            class="nav-dropdown-trigger">
+                            Our Products
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown">
+                            <a href="product-listing.html" role="link" target="_self"
+                                aria-label="View 3D Printer Industrial products" class="nav-dropdown-link">3D Printer
+                                Industrial</a>
+                            <div class="nav-item nav-item-has-sub">
+                                <a href="product-listing.html" role="link" target="_self"
+                                    aria-label="Browse Filament Category"
+                                    class="nav-dropdown-link nav-has-sub-trigger">
+                                    Filament Category
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                    </svg>
+                                </a>
+                                <div class="nav-submenu">
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View ABS filament" class="nav-dropdown-link">ABS</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View ABS+ filament" class="nav-dropdown-link">ABS+</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View ABS+ Pro's Tuff filament" class="nav-dropdown-link">ABS+ Pro's
+                                        Tuff</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View ABS Flame Retardant filament" class="nav-dropdown-link">ABS
+                                        Flame Retardant</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View Flexible filament" class="nav-dropdown-link">Flexible</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View HIPS filament" class="nav-dropdown-link">HIPS</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PLA Glow in Dark filament" class="nav-dropdown-link">PLA — Glow
+                                        in Dark</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View Nylon filament" class="nav-dropdown-link">Nylon</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View Pet-C filament" class="nav-dropdown-link">Pet-C</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PC Blender filament" class="nav-dropdown-link">PC Blender</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PLA filament" class="nav-dropdown-link">PLA</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View D-Glass filament" class="nav-dropdown-link">D-Glass</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PLA Silk filament" class="nav-dropdown-link">PLA Silk</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PLA+ Pro's filament" class="nav-dropdown-link">PLA+ Pro's</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PLA+ Pro's Glitter filament" class="nav-dropdown-link">PLA+
+                                        Pro's Glitter</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PLA+ Pros Antique filament" class="nav-dropdown-link">PLA+ Pros
+                                        Antique</a>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="View PLA+ Pro's Special filament" class="nav-dropdown-link">PLA+
+                                        Pro's Special</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./work.html" role="link" target="_self" aria-label="View our work">Work</a>
+                    <a href="./contact.html" role="link" target="_self" aria-label="Go to Contact section">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="header-actions">
+                    <button type="button" aria-label="View shopping cart" class="header-icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8" cy="21" r="1" />
+                            <circle cx="19" cy="21" r="1" />
+                            <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                        </svg>
+                    </button>
+                    <button type="button" aria-label="View user account" class="header-icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </button>
+                    <button type="button" aria-label="Toggle mobile navigation menu" class="header-menu-toggle"
+                        id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-              </div>
             </div>
-          </div>
-          <a href="#" role="link" target="_self" aria-label="View our work">Work</a>
-          <a href="#testimonials" role="link" target="_self" aria-label="Go to Testimonials section">Testimonials</a>
-          <a href="#contact" role="link" target="_self" aria-label="Go to Contact section">Contact</a>
-        </nav>
-
-        <!-- Actions -->
-        <div class="header-actions">
-          <button type="button" aria-label="View shopping cart" class="header-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="8" cy="21" r="1" />
-              <circle cx="19" cy="21" r="1" />
-              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-            </svg>
-          </button>
-          <button type="button" aria-label="View user account" class="header-icon-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
-          </button>
-
-          <!-- Mobile toggle -->
-          <button type="button" aria-label="Toggle mobile navigation menu" class="header-menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
         </div>
-      </div>
-    </div>
-  </header>
-  <!-- ==================== /HEADER ==================== -->
+    </header>
+    <!-- ==================== /HEADER ==================== -->
 
   <!-- Mobile Nav Overlay -->
   <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
@@ -165,9 +160,9 @@
       </button>
     </div>
     <div class="mobile-nav-links">
-      <a href="/" role="link" target="_self" aria-label="Go to Home" class="mobile-nav-link">Home</a>
-      <a href="#about" role="link" target="_self" aria-label="Go to About section" class="mobile-nav-link">About</a>
-      <a href="#" role="link" target="_self" aria-label="Learn about 3D Printing" class="mobile-nav-link">What is 3D
+      <a href="./index.html" role="link" target="_self" aria-label="Go to Home" class="mobile-nav-link">Home</a>
+      <a href="./about.html" role="link" target="_self" aria-label="Go to About section" class="mobile-nav-link">About</a>
+      <a href="./index.html#about" role="link" target="_self" aria-label="Learn about 3D Printing" class="mobile-nav-link">What is 3D
         Printing?</a>
       <details class="mobile-nav-details">
         <summary class="mobile-nav-summary" aria-label="Toggle Our Products menu">
@@ -178,7 +173,7 @@
           </svg>
         </summary>
         <div class="mobile-nav-sub">
-          <a href="#products" role="link" target="_self" aria-label="View 3D Printer Industrial products">3D Printer
+          <a href="product-listing.html" role="link" target="_self" aria-label="View 3D Printer Industrial products">3D Printer
             Industrial</a>
           <details class="mobile-nav-details">
             <summary class="mobile-nav-summary mobile-nav-summary-nested" aria-label="Toggle Filament Category menu">
@@ -189,37 +184,35 @@
               </svg>
             </summary>
             <div class="mobile-nav-sub mobile-nav-sub-nested">
-              <a href="#products" role="link" target="_self" aria-label="View ABS filament">ABS</a>
-              <a href="#products" role="link" target="_self" aria-label="View ABS+ filament">ABS+</a>
-              <a href="#products" role="link" target="_self" aria-label="View ABS+ Pro's Tuff filament">ABS+ Pro's
+              <a href="product-listing.html" role="link" target="_self" aria-label="View ABS filament">ABS</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View ABS+ filament">ABS+</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View ABS+ Pro's Tuff filament">ABS+ Pro's
                 Tuff</a>
-              <a href="#products" role="link" target="_self" aria-label="View ABS Flame Retardant filament">ABS Flame
+              <a href="product-listing.html" role="link" target="_self" aria-label="View ABS Flame Retardant filament">ABS Flame
                 Retardant</a>
-              <a href="#products" role="link" target="_self" aria-label="View Flexible filament">Flexible</a>
-              <a href="#products" role="link" target="_self" aria-label="View HIPS filament">HIPS</a>
-              <a href="#products" role="link" target="_self" aria-label="View PLA Glow in Dark filament">PLA — Glow in
+              <a href="product-listing.html" role="link" target="_self" aria-label="View Flexible filament">Flexible</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View HIPS filament">HIPS</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PLA Glow in Dark filament">PLA — Glow in
                 Dark</a>
-              <a href="#products" role="link" target="_self" aria-label="View Nylon filament">Nylon</a>
-              <a href="#products" role="link" target="_self" aria-label="View Pet-C filament">Pet-C</a>
-              <a href="#products" role="link" target="_self" aria-label="View PC Blender filament">PC Blender</a>
-              <a href="#products" role="link" target="_self" aria-label="View PLA filament">PLA</a>
-              <a href="#products" role="link" target="_self" aria-label="View D-Glass filament">D-Glass</a>
-              <a href="#products" role="link" target="_self" aria-label="View PLA Silk filament">PLA Silk</a>
-              <a href="#products" role="link" target="_self" aria-label="View PLA+ Pro's filament">PLA+ Pro's</a>
-              <a href="#products" role="link" target="_self" aria-label="View PLA+ Pro's Glitter filament">PLA+ Pro's
+              <a href="product-listing.html" role="link" target="_self" aria-label="View Nylon filament">Nylon</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View Pet-C filament">Pet-C</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PC Blender filament">PC Blender</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PLA filament">PLA</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View D-Glass filament">D-Glass</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PLA Silk filament">PLA Silk</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PLA+ Pro's filament">PLA+ Pro's</a>
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PLA+ Pro's Glitter filament">PLA+ Pro's
                 Glitter</a>
-              <a href="#products" role="link" target="_self" aria-label="View PLA+ Pros Antique filament">PLA+ Pros
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PLA+ Pros Antique filament">PLA+ Pros
                 Antique</a>
-              <a href="#products" role="link" target="_self" aria-label="View PLA+ Pro's Special filament">PLA+ Pro's
+              <a href="product-listing.html" role="link" target="_self" aria-label="View PLA+ Pro's Special filament">PLA+ Pro's
                 Special</a>
             </div>
           </details>
         </div>
       </details>
-      <a href="#" role="link" target="_self" aria-label="View our work" class="mobile-nav-link">Work</a>
-      <a href="#testimonials" role="link" target="_self" aria-label="Go to Testimonials section"
-        class="mobile-nav-link">Testimonials</a>
-      <a href="#contact" role="link" target="_self" aria-label="Go to Contact section"
+      <a href="work.html" role="link" target="_self" aria-label="View our work" class="mobile-nav-link">Work</a>
+      <a href="contact.html" role="link" target="_self" aria-label="Go to Contact section"
         class="mobile-nav-link">Contact</a>
     </div>
   </nav>
@@ -263,7 +256,7 @@
             </div>
 
             <div class="hero-btns">
-              <a href="#products" role="link" target="_self" aria-label="Explore our products" class="btn btn-primary">
+              <a href="./product-listing.html" role="link" target="_self" aria-label="Explore our products" class="btn btn-primary">
                 Explore Products
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -289,9 +282,8 @@
                 srcset="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=400 400w,
                         https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=768 768w,
                         https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=1080 1080w"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                alt="3D printing filament technology modern manufacturing" width="1080" height="720"
-                fetchpriority="high" decoding="async" class="hero-img" />
+                sizes="(max-width: 768px) 100vw, 50vw" alt="3D printing filament technology modern manufacturing"
+                width="1080" height="720" fetchpriority="high" decoding="async" class="hero-img" />
               <div class="overlay-image"></div>
             </div>
 
@@ -316,141 +308,15 @@
     </section>
     <!-- ==================== /HERO ==================== -->
 
-    <!-- ==================== TRUSTED BY ==================== -->
-    <section class="trusted-section general-padding" id="trusted">
-      <!-- Blobs -->
-      <div class="blob blob-trusted-1" aria-hidden="true"></div>
-      <div class="blob blob-trusted-2" aria-hidden="true"></div>
-
-      <div class="container-fluid">
-        <!-- Header -->
-        <div class="trust-badge-wrap" data-animate>
-          <div class="trust-pill">
-            <p class="trust-pill-text">
-              Trusted by innovators &amp; makers across India
-            </p>
-          </div>
-        </div>
-
-        <!-- Logo Grid -->
-        <div class="trust-cards-grid" data-animate>
-          <!-- ISO -->
-          <div class="trust-card">
-            <div class="trust-card-glow"></div>
-            <div class="trust-card-inner trust-card-inner--blue">
-              <div class="trust-card-content">
-                <div
-                  class="trust-card-label trust-card-label--tight trust-card-gradient-text trust-card-gradient-text--blue">
-                  ISO 9001
-                </div>
-                <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--blue">
-                  2015 Certified
-                </div>
-              </div>
-              <div class="trust-card-deco-dot-1"></div>
-              <div class="trust-card-deco-dot-2"></div>
-              <div class="trust-card-shine"></div>
-            </div>
-          </div>
-
-          <!-- Made in India -->
-          <div class="trust-card">
-            <div class="trust-card-glow"></div>
-            <div class="trust-card-inner trust-card-inner--orange">
-              <div class="trust-card-content">
-                <div
-                  class="trust-card-label trust-card-label--tight trust-card-gradient-text trust-card-gradient-text--orange">
-                  MADE IN
-                </div>
-                <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--orange">
-                  INDIA
-                </div>
-              </div>
-              <div class="trust-card-deco-dot-1"></div>
-              <div class="trust-card-deco-dot-2"></div>
-              <div class="trust-card-shine"></div>
-            </div>
-          </div>
-
-          <!-- Gujarat -->
-          <div class="trust-card">
-            <div class="trust-card-glow"></div>
-            <div class="trust-card-inner trust-card-inner--purple">
-              <div class="trust-card-content">
-                <div class="trust-card-label trust-card-gradient-text trust-card-gradient-text--purple">
-                  Gujarat
-                </div>
-                <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--purple">
-                  Manufacturing
-                </div>
-              </div>
-              <div class="trust-card-deco-dot-1"></div>
-              <div class="trust-card-deco-dot-2"></div>
-              <div class="trust-card-shine"></div>
-            </div>
-          </div>
-
-          <!-- Quality First -->
-          <div class="trust-card">
-            <div class="trust-card-glow"></div>
-            <div class="trust-card-inner trust-card-inner--green">
-              <div class="trust-card-content">
-                <div class="trust-card-label trust-card-gradient-text trust-card-gradient-text--green">
-                  QUALITY
-                </div>
-                <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--green">
-                  FIRST
-                </div>
-              </div>
-              <div class="trust-card-deco-dot-1"></div>
-              <div class="trust-card-deco-dot-2"></div>
-              <div class="trust-card-shine"></div>
-            </div>
-          </div>
-
-          <!-- Premium -->
-          <div class="trust-card">
-            <div class="trust-card-glow"></div>
-            <div class="trust-card-inner trust-card-inner--pink">
-              <div class="trust-card-content">
-                <div class="trust-card-label trust-card-gradient-text trust-card-gradient-text--pink">
-                  PREMIUM
-                </div>
-                <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--pink">
-                  Grade
-                </div>
-              </div>
-              <div class="trust-card-deco-dot-1"></div>
-              <div class="trust-card-deco-dot-2"></div>
-              <div class="trust-card-shine"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom accent -->
-        <div class="trust-bottom-pill" data-animate>
-          <div class="trust-bottom-inner">
-            <div class="content content-gray">
-              <p>
-                Join
-                <strong class="gradient-text">5,000+</strong> professionals,
-                hobbyists, and enterprises who rely on our premium filaments
-                for their mission-critical 3D printing projects.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ==================== /TRUSTED BY ==================== -->
 
     <!-- ==================== ABOUT ==================== -->
     <section class="about-section general-padding" id="about">
       <div class="container-fluid">
-        <div class="grid grid-cols-2 gap-64 max-768:grid-cols-1 max-768:gap-32">
+        <!-- <div class="grid grid-cols-2 gap-64 max-1024:grid-cols-1 max-768:gap-32"> -->
+        <div class="flex gap-64 max-992:flex-col max-992:gap-32">
           <!-- Content -->
-          <div data-animate>
-            <div class="badge badge-primary mb-16">Who We Are</div>
+          <div data-animate class="about-content">
+            <div class="about-content badge badge-primary mb-16">Who We Are</div>
 
             <div class="title title-dark mb-16">
               <h2>India's Pioneer in 3D Printing Excellence</h2>
@@ -553,26 +419,29 @@
             </div>
           </div>
 
-          <!-- Image Grid -->
-          <div class="about-img-grid" data-animate>
-            <div class="grid grid-cols-2 gap-16">
+          <!-- Images -->
+          <div class="about-img-wrapper">
+            <div class="about-img-top">
               <div class="about-img-cell">
                 <img
                   src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=600"
-                  alt="3D printing filament manufacturing process" width="600" height="400" loading="lazy" />
+                  alt="DucoFilla 3D printing filament quality" width="400" height="300" loading="lazy" />
               </div>
-              <div class="about-img-cell about-img-cell-offset">
+              <div class="about-img-cell">
                 <img
                   src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=600"
-                  alt="Advanced 3D printing technology" width="600" height="400" loading="lazy" />
+                  alt="DucoFilla filament manufacturing process" width="400" height="300" loading="lazy" />
               </div>
-              <div class="about-img-cell about-img-cell-wide">
+            </div>
+            <div class="about-img-bottom">
+              <div class="about-img-cell">
                 <img
                   src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
-                  alt="Quality control inspection of 3D printing filament" width="800" height="400" loading="lazy" />
+                  alt="DucoFilla 3D printing materials range" width="800" height="400" loading="lazy" />
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -612,195 +481,343 @@
               <!-- Product 1: PLA Pro Premium -->
               <div class="swiper-slide">
                 <div class="product-card">
-                  <div class="product-card-img-wrap">
-                    <img
-                      src="https://images.unsplash.com/photo-1642969164999-979483e21601?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
-                      alt="PLA Pro Premium 3D printing filament spool" width="800" height="400" loading="lazy" />
-                    <div class="overlay-dark-bottom"></div>
-                    <div class="product-category-badge">PLA Series</div>
-                    <div class="product-hover-actions">
-                      <button type="button" aria-label="Quick view PLA Pro Premium" class="btn-quick-view">
-                        Quick View
-                      </button>
-                      <button type="button" aria-label="Add PLA Pro Premium to cart" class="btn-add-cart">
-                        Add to Cart
-                      </button>
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product1.jpeg" alt="PLA Pro Premium 3D printing filament spool"
+                        width="800" height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+</div>
                     </div>
-                  </div>
-                  <div class="product-card-body">
-                    <div class="product-rating">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#facc15"
-                        stroke="#facc15" stroke-width="1">
-                        <polygon
-                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                      </svg>
-                      <span class="product-rating-value">4.9</span>
-                      <span class="product-rating-count">(234 reviews)</span>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS BLUE</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">4.9</span>
+                            <span class="product-rating-count">(234)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS BLUE" class="btn-quick-view">View More</button>
+                        <button type="button" aria-label="Add ABS BLUE to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
                     </div>
-                    <div class="title title-dark mb-8">
-                      <h3 class="h6">PLA Pro Premium</h3>
-                    </div>
-                    <div class="product-price-wrap">
-                      <span class="product-price-old">₹1,099</span>
-                      <span class="product-price">₹899</span>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
 
               <!-- Product 2: ABS Pro Tuff -->
               <div class="swiper-slide">
                 <div class="product-card">
-                  <div class="product-card-img-wrap">
-                    <img
-                      src="https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
-                      alt="ABS Pro Tuff 3D printing filament spool" width="800" height="400" loading="lazy" />
-                    <div class="overlay-dark-bottom"></div>
-                    <div class="product-category-badge">ABS Series</div>
-                    <div class="product-hover-actions">
-                      <button type="button" aria-label="Quick view ABS Pro Tuff" class="btn-quick-view">
-                        Quick View
-                      </button>
-                      <button type="button" aria-label="Add ABS Pro Tuff to cart" class="btn-add-cart">
-                        Add to Cart
-                      </button>
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product2.jpeg" alt="ABS Pro Tuff 3D printing filament spool"
+                        width="800" height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+</div>
                     </div>
-                  </div>
-                  <div class="product-card-body">
-                    <div class="product-rating">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#facc15"
-                        stroke="#facc15" stroke-width="1">
-                        <polygon
-                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                      </svg>
-                      <span class="product-rating-value">4.8</span>
-                      <span class="product-rating-count">(189 reviews)</span>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS+ YELLOW</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">4.8</span>
+                            <span class="product-rating-count">(189)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS+ YELLOW" class="btn-quick-view">View
+                          More</button>
+                        <button type="button" aria-label="Add ABS+ YELLOW to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
                     </div>
-                    <div class="title title-dark mb-8">
-                      <h3 class="h6">ABS Pro Tuff</h3>
-                    </div>
-                    <div class="product-price-wrap">
-                      <span class="product-price-old">₹1,299</span>
-                      <span class="product-price">₹1,099</span>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
 
-              <!-- Product 3: PLA Silk -->
+              <!-- Product 3: ABS+ GREEN -->
               <div class="swiper-slide">
                 <div class="product-card">
-                  <div class="product-card-img-wrap">
-                    <img
-                      src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
-                      alt="PLA Silk premium 3D printing filament" width="800" height="400" loading="lazy" />
-                    <div class="overlay-dark-bottom"></div>
-                    <div class="product-category-badge">PLA Series</div>
-                    <div class="product-hover-actions">
-                      <button type="button" aria-label="Quick view PLA Silk" class="btn-quick-view">
-                        Quick View
-                      </button>
-                      <button type="button" aria-label="Add PLA Silk to cart" class="btn-add-cart">
-                        Add to Cart
-                      </button>
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product3.jpeg" alt="ABS+ GREEN 3D printing filament spool" width="800"
+                        height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+ </div>
                     </div>
-                  </div>
-                  <div class="product-card-body">
-                    <div class="product-rating">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#facc15"
-                        stroke="#facc15" stroke-width="1">
-                        <polygon
-                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                      </svg>
-                      <span class="product-rating-value">5.0</span>
-                      <span class="product-rating-count">(312 reviews)</span>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS+ GREEN</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">5.0</span>
+                            <span class="product-rating-count">(312)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS+ GREEN" class="btn-quick-view">View
+                          More</button>
+                        <button type="button" aria-label="Add ABS+ GREEN to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
                     </div>
-                    <div class="title title-dark mb-8">
-                      <h3 class="h6">PLA Silk</h3>
-                    </div>
-                    <div class="product-price-wrap">
-                      <span class="product-price-old">₹1,499</span>
-                      <span class="product-price">₹1,199</span>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
 
-              <!-- Product 4: Flexible TPU -->
+              <!-- Product 4: ABS+ WHITE -->
               <div class="swiper-slide">
                 <div class="product-card">
-                  <div class="product-card-img-wrap">
-                    <img
-                      src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
-                      alt="Flexible TPU specialty 3D printing filament" width="800" height="400" loading="lazy" />
-                    <div class="overlay-dark-bottom"></div>
-                    <div class="product-category-badge">Specialty</div>
-                    <div class="product-hover-actions">
-                      <button type="button" aria-label="Quick view Flexible TPU" class="btn-quick-view">
-                        Quick View
-                      </button>
-                      <button type="button" aria-label="Add Flexible TPU to cart" class="btn-add-cart">
-                        Add to Cart
-                      </button>
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product4.jpeg" alt="ABS+ WHITE 3D printing filament spool" width="800"
+                        height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+</div>
                     </div>
-                  </div>
-                  <div class="product-card-body">
-                    <div class="product-rating">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#facc15"
-                        stroke="#facc15" stroke-width="1">
-                        <polygon
-                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                      </svg>
-                      <span class="product-rating-value">4.7</span>
-                      <span class="product-rating-count">(156 reviews)</span>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS+ WHITE</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">4.7</span>
+                            <span class="product-rating-count">(156)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS+ WHITE" class="btn-quick-view">View
+                          More</button>
+                        <button type="button" aria-label="Add ABS+ WHITE to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
                     </div>
-                    <div class="title title-dark mb-8">
-                      <h3 class="h6">Flexible TPU</h3>
-                    </div>
-                    <div class="product-price-wrap">
-                      <span class="product-price-old">₹1,799</span>
-                      <span class="product-price">₹1,499</span>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
 
-              <!-- Product 5: PETG Pro -->
+              <!-- Product 5: ABS+ BLACK-->
               <div class="swiper-slide">
                 <div class="product-card">
-                  <div class="product-card-img-wrap">
-                    <img
-                      src="https://images.unsplash.com/photo-1638959492386-f9a68d55c374?crop=entropy&cs=tinysrgb&fit=max&fm=webp&q=80&w=800"
-                      alt="PETG Pro specialty 3D printing filament" width="800" height="400" loading="lazy" />
-                    <div class="overlay-dark-bottom"></div>
-                    <div class="product-category-badge">Specialty</div>
-                    <div class="product-hover-actions">
-                      <button type="button" aria-label="Quick view PETG Pro" class="btn-quick-view">
-                        Quick View
-                      </button>
-                      <button type="button" aria-label="Add PETG Pro to cart" class="btn-add-cart">
-                        Add to Cart
-                      </button>
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product5.jpeg" alt="PETG Pro specialty 3D printing filament"
+                        width="800" height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+</div>
                     </div>
-                  </div>
-                  <div class="product-card-body">
-                    <div class="product-rating">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#facc15"
-                        stroke="#facc15" stroke-width="1">
-                        <polygon
-                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                      </svg>
-                      <span class="product-rating-value">4.9</span>
-                      <span class="product-rating-count">(278 reviews)</span>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS+ BLACK</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">4.9</span>
+                            <span class="product-rating-count">(278)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS+ BLACK" class="btn-quick-view">View
+                          More</button>
+                        <button type="button" aria-label="Add ABS+ BLACK to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
                     </div>
-                    <div class="title title-dark mb-8">
-                      <h3 class="h6">PETG Pro</h3>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Product 6: ABS+ PINK-->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product6.png" alt="ABS+ PINK 3D printing filament" width="800"
+                        height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+</div>
                     </div>
-                    <div class="product-price-wrap">
-                      <span class="product-price-old">₹1,599</span>
-                      <span class="product-price">₹1,299</span>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS+ PINK</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">4.9</span>
+                            <span class="product-rating-count">(278)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS+ PINK" class="btn-quick-view">View
+                          More</button>
+                        <button type="button" aria-label="Add ABS+ PINK to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
                     </div>
-                  </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Product 7: ABS+ PURPLE-->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product7.jpeg" alt="ABS+ PURPLE 3D printing filament" width="800"
+                        height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+</div>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS+ PURPLE</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">4.9</span>
+                            <span class="product-rating-count">(278)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS+ PURPLE" class="btn-quick-view">View
+                          More</button>
+                        <button type="button" aria-label="Add ABS+ PURPLE to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Product 8: ABS+ SILVER-->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <a href="product-detail.html">
+                    <div class="product-card-img-wrap">
+                      <img src="../assets/images/product8.jpeg" alt="ABS+ SILVER 3D printing filament" width="800"
+                        height="400" loading="lazy" />
+                      <div class="overlay-dark-bottom"></div>
+                      <div class="product-category-badge">ABS+</div>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="product-card-info">
+                        <div class="title title-dark">
+                          <h3 class="h6">ABS+ SILVER</h3>
+                        </div>
+                        <div class="product-card-meta">
+                          <div class="product-rating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                              fill="#facc15" stroke="#facc15" stroke-width="1">
+                              <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <span class="product-rating-value">4.9</span>
+                            <span class="product-rating-count">(278)</span>
+                          </div>
+                          <div class="product-price-wrap">
+                            <span class="product-price-old">₹950</span>
+                            <span class="product-price">₹750</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product-card-divider"></div>
+                      <div class="product-hover-actions">
+                        <button type="button" aria-label="Quick view ABS+ SILVER" class="btn-quick-view">View
+                          More</button>
+                        <button type="button" aria-label="Add ABS+ SILVER to cart" class="btn-add-cart">Add to
+                          Cart</button>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -818,6 +835,176 @@
     </section>
     <!-- ==================== /PRODUCT SLIDER ==================== -->
 
+
+        <!-- ==================== TRUSTED BY ==================== -->
+    <section class="trusted-section general-padding" id="trusted">
+      <!-- Blobs -->
+      <div class="blob blob-trusted-1" aria-hidden="true"></div>
+      <div class="blob blob-trusted-2" aria-hidden="true"></div>
+
+      <div class="container-fluid">
+        <!-- Header -->
+        <div class="trust-badge-wrap" data-animate>
+          <div class="trust-pill">
+            <p class="trust-pill-text">
+              Trusted by innovators &amp; makers across India
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo Grid -->
+        <div class="trust-cards-grid" data-animate>
+          <!-- ISO -->
+          <div class="trust-card">
+            <div class="trust-card-glow"></div>
+            <div class="trust-card-inner trust-card-inner--blue">
+              <div class="trust-card-content">
+                <svg class="trust-card-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <div>
+                  <div
+                    class="trust-card-label trust-card-label--tight trust-card-gradient-text trust-card-gradient-text--blue">
+                    ISO 9001
+                  </div>
+                  <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--blue">
+                    2015 Certified
+                  </div>
+                </div>
+              </div>
+              <div class="trust-card-deco-dot-1"></div>
+              <div class="trust-card-deco-dot-2"></div>
+              <div class="trust-card-shine"></div>
+            </div>
+          </div>
+
+          <!-- Made in India -->
+          <div class="trust-card">
+            <div class="trust-card-glow"></div>
+            <div class="trust-card-inner trust-card-inner--orange">
+              <div class="trust-card-content">
+                <svg class="trust-card-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+                  <line x1="4" y1="22" x2="4" y2="15" />
+                </svg>
+                <div>
+                  <div
+                    class="trust-card-label trust-card-label--tight trust-card-gradient-text trust-card-gradient-text--orange">
+                    MADE IN
+                  </div>
+                  <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--orange">
+                    INDIA
+                  </div>
+                </div>
+              </div>
+              <div class="trust-card-deco-dot-1"></div>
+              <div class="trust-card-deco-dot-2"></div>
+              <div class="trust-card-shine"></div>
+            </div>
+          </div>
+
+          <!-- Gujarat -->
+          <div class="trust-card">
+            <div class="trust-card-glow"></div>
+            <div class="trust-card-inner trust-card-inner--purple">
+              <div class="trust-card-content">
+                <svg class="trust-card-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  <line x1="12" y1="12" x2="12" y2="12" />
+                </svg>
+                <div>
+                  <div class="trust-card-label trust-card-gradient-text trust-card-gradient-text--purple">
+                    Gujarat
+                  </div>
+                  <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--purple">
+                    Manufacturing
+                  </div>
+                </div>
+              </div>
+              <div class="trust-card-deco-dot-1"></div>
+              <div class="trust-card-deco-dot-2"></div>
+              <div class="trust-card-shine"></div>
+            </div>
+          </div>
+
+          <!-- Quality First -->
+          <div class="trust-card">
+            <div class="trust-card-glow"></div>
+            <div class="trust-card-inner trust-card-inner--green">
+              <div class="trust-card-content">
+                <svg class="trust-card-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <div>
+                  <div class="trust-card-label trust-card-gradient-text trust-card-gradient-text--green">
+                    QUALITY
+                  </div>
+                  <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--green">
+                    FIRST
+                  </div>
+                </div>
+              </div>
+              <div class="trust-card-deco-dot-1"></div>
+              <div class="trust-card-deco-dot-2"></div>
+              <div class="trust-card-shine"></div>
+            </div>
+          </div>
+
+          <!-- Premium -->
+          <div class="trust-card">
+            <div class="trust-card-glow"></div>
+            <div class="trust-card-inner trust-card-inner--pink">
+              <div class="trust-card-content">
+                <svg class="trust-card-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" />
+                  <path d="M5 20h14" />
+                </svg>
+                <div>
+                  <div class="trust-card-label trust-card-gradient-text trust-card-gradient-text--pink">
+                    PREMIUM
+                  </div>
+                  <div class="trust-card-sublabel trust-card-gradient-text trust-card-gradient-text--pink">
+                    Grade
+                  </div>
+                </div>
+              </div>
+              <div class="trust-card-deco-dot-1"></div>
+              <div class="trust-card-deco-dot-2"></div>
+              <div class="trust-card-shine"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom accent -->
+        <div class="trust-bottom-pill" data-animate>
+          <div class="trust-bottom-inner">
+            <div class="content content-gray">
+              <p>
+                Join
+                <strong class="gradient-text">5,000+</strong> professionals,
+                hobbyists, and enterprises who rely on our premium filaments
+                for their mission-critical 3D printing projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== /TRUSTED BY ==================== -->
+     
     <!-- ==================== CATEGORY ==================== -->
     <section class="category-section general-padding">
       <div class="container-fluid">
@@ -1019,6 +1206,17 @@
             </div>
           </a>
         </div>
+        <div class="flex justify-center mt-25">
+          <a href="javascript:void(0)" role="link" target="_self" aria-label="Explore our products"
+            class="btn btn-primary">
+            Explore Category
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m5 12 14 0" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
     <!-- ==================== /CATEGORY ==================== -->
@@ -1053,7 +1251,7 @@
     <section class="features-section general-padding" id="features">
       <div class="container-fluid">
         <!-- Header -->
-        <div class="common-heading max-w-3xl mx-auto" data-animate>
+        <div class="common-heading max-w-4xl mx-auto" data-animate>
           <div class="badge badge-primary mb-16">Why Choose Us</div>
           <div class="title title-dark mb-16">
             <h2>Uncompromising Quality in Every Detail</h2>
@@ -1566,245 +1764,272 @@
     <!-- ==================== TRUST STATS ==================== -->
     <section class="trust-stats-section general-padding" id="trust-stats">
       <div class="container-fluid">
-        <div class="trust-stats-grid" data-animate>
-          <div class="trust-stat">
-            <div class="trust-stat-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
+        <div class="trust-stats-layout" data-animate>
+
+          <!-- Left: Contact Form -->
+          <div class="trust-contact-wrap">
+            <div class="title title-dark mb-8">
+              <h2>Get in Touch</h2>
             </div>
-            <div class="trust-stat-value">5,000+</div>
-            <div class="trust-stat-label">Happy Customers</div>
-          </div>
-          <div class="trust-stat">
-            <div class="trust-stat-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <polygon
-                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-              </svg>
+            <div class="content content-muted mb-24">
+              <p>Have a question or want to place a bulk order? Send us a message.</p>
             </div>
-            <div class="trust-stat-value">4.9/5</div>
-            <div class="trust-stat-label">Average Rating</div>
+            <form class="trust-contact-form" novalidate>
+              <div class="trust-contact-field">
+                <label for="contact-name" class="trust-contact-label">Name</label>
+                <input type="text" id="contact-name" name="name" class="trust-contact-input" placeholder="Your name"
+                  aria-label="Your name" autocomplete="name" required />
+              </div>
+              <div class="trust-contact-field">
+                <label for="contact-email" class="trust-contact-label">Email</label>
+                <input type="email" id="contact-email" name="email" class="trust-contact-input"
+                  placeholder="your@email.com" aria-label="Your email address" autocomplete="email" required />
+              </div>
+              <div class="trust-contact-field">
+                <label for="contact-message" class="trust-contact-label">Message</label>
+                <textarea id="contact-message" name="message" class="trust-contact-textarea"
+                  placeholder="Your message..." aria-label="Your message" rows="4" required></textarea>
+              </div>
+              <button type="submit" aria-label="Send message" class="btn btn-primary trust-contact-submit">Send
+                Message</button>
+            </form>
           </div>
-          <div class="trust-stat">
-            <div class="trust-stat-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                <path d="m9 12 2 2 4-4" />
-              </svg>
+
+          <!-- Right: Stats 2×2 -->
+          <div class="trust-stats-grid">
+            <div class="trust-stat">
+              <div class="trust-stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="trust-stat-value">5,000+</div>
+              <div class="trust-stat-label">Happy Customers</div>
             </div>
-            <div class="trust-stat-value">98%</div>
-            <div class="trust-stat-label">Satisfaction Rate</div>
-          </div>
-          <div class="trust-stat">
-            <div class="trust-stat-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
+            <div class="trust-stat">
+              <div class="trust-stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+              </div>
+              <div class="trust-stat-value">4.9/5</div>
+              <div class="trust-stat-label">Average Rating</div>
             </div>
-            <div class="trust-stat-value">24hr</div>
-            <div class="trust-stat-label">Response Time</div>
+            <div class="trust-stat">
+              <div class="trust-stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div class="trust-stat-value">98%</div>
+              <div class="trust-stat-label">Satisfaction Rate</div>
+            </div>
+            <div class="trust-stat">
+              <div class="trust-stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div class="trust-stat-value">24hr</div>
+              <div class="trust-stat-label">Response Time</div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
     <!-- ==================== /TRUST STATS ==================== -->
   </main>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer>
-    <div class="container-fluid">
-      <div class="footer-top">
-        <div class="footer-cols">
-          <!-- Brand Column -->
-          <div class="footer-col-brand">
-            <div class="footer-logo">
-              <img src="../assets/images/logo2.png" alt="DuchoFilla logo" width="160" height="48" loading="lazy"
-                class="footer-logo-img" />
-            </div>
+<!-- ==================== FOOTER ==================== -->
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-top">
+                    <div class="footer-cols">
+                        <!-- Brand -->
+                        <div class="footer-col-brand">
+                            <div class="footer-logo">
+                                <img src="../assets/images/logo2.png" alt="DuchoFilla logo" width="160" height="48"
+                                    loading="lazy" class="footer-logo-img" />
+                            </div>
+                            <div class="footer-contact-item">
+                                <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Shopan Complex, Office No-3<br />Opp Dr. Pala, Nirmala Road
+                                    Rajkot, Gujarat, India</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.09 6.09l1.96-1.31a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15z" />
+                                </svg>
+                                <a href="tel:+919824289990" role="link" target="_self"
+                                    aria-label="Call DuchoFilla at +91 9824289990">+91 9824289990 / +91 7990883127</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                                <a href="mailto:filladucho@gmail.com" role="link" target="_self"
+                                    aria-label="Email DuchoFilla at filladucho@gmail.com">filladucho@gmail.com</a>
+                            </div>
+                           <div class="footer-social">
+    <a href="https://www.facebook.com/people/Ducho-Filla/pfbid02a9StpoLouFEma5Z3nZezTLHfLJUSVCFGSzDsQPqSFXUZJ5D6pw4uyAWsNBPCDxytl/"
+        role="link" target="_blank" aria-label="Visit DuchoFilla on Facebook" class="footer-social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+        </svg>
+    </a>
+    <a href="https://www.instagram.com/ducho_filla_filament/" role="link" target="_blank"
+        aria-label="Visit DuchoFilla on Instagram" class="footer-social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        </svg>
+    </a>
+    <a href="https://x.com/sangani_vijay" role="link" target="_blank" aria-label="Visit DuchoFilla on twitter"
+    class="footer-social-link">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M9.2942 6.928L14.3572 1H13.1572L8.7622 6.147L5.2502 1H1.2002L6.5102 8.784L1.2002 15H2.4002L7.0422 9.564L10.7512 15H14.8012L9.2942 6.928ZM7.6512 8.852L7.1132 8.077L2.8322 1.91H4.6752L8.1292 6.887L8.6672 7.662L13.1582 14.132H11.3152L7.6512 8.852Z"
+            fill="#9CA3AF" />
+    </svg>
+</a>
+</div>
+                        </div>
 
-            <div class="footer-contact-item">
-              <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-              <span>Shopan Complex, Office No-3<br />Opp Dr. Pala, Nirmala Road
-                Rajkot, Guajrat, India</span>
-            </div>
-            <div class="footer-contact-item">
-              <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 11.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.09 6.09l1.96-1.31a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 15z" />
-              </svg>
-              <a href="tel:+919824289990" role="link" target="_self" aria-label="Call DuchoFilla at +91 9824289990">+91
-                9824289990 / +91 7990883127</a>
-            </div>
-            <div class="footer-contact-item">
-              <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="16" x="2" y="4" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-              </svg>
-              <a href="mailto:filladucho@gmail.com" role="link" target="_self"
-                aria-label="Email DuchoFilla at filladucho@gmail.com">filladucho@gmail.com</a>
-            </div>
+                        <!-- Products -->
+                        <div class="footer-col">
+                            <div class="footer-nav-title">Products</div>
+                            <ul class="footer-nav-list">
+                                <li>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="Browse ABS Filaments" class="footer-nav-link">ABS</a>
+                                </li>
+                                <li>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="Browse ABS Plus Filaments" class="footer-nav-link">ABS+</a>
+                                </li>
+                                <li>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="Browse PLA Filaments" class="footer-nav-link">PLA</a>
+                                </li>
+                                <li>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="Browse PLA Silk Filaments" class="footer-nav-link">PLA Silk</a>
+                                </li>
+                                <li>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="Browse PLA Pro Filaments" class="footer-nav-link">PLA+ Pro's</a>
+                                </li>
+                                <li>
+                                    <a href="product-listing.html" role="link" target="_self"
+                                        aria-label="Browse Flexible Filaments" class="footer-nav-link">Flexible</a>
+                                </li>
+                            </ul>
+                        </div>
 
-            <div class="footer-social">
-              <a href="#" role="link" target="_blank" aria-label="Visit DuchoFilla on Facebook"
-                class="footer-social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
-              </a>
-              <a href="#" role="link" target="_blank" aria-label="Visit DuchoFilla on Instagram"
-                class="footer-social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                </svg>
-              </a>
-              <a href="#" role="link" target="_blank" aria-label="Visit DuchoFilla on Twitter"
-                class="footer-social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path
-                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                </svg>
-              </a>
-              <a href="#" role="link" target="_blank" aria-label="Visit DuchoFilla on LinkedIn"
-                class="footer-social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                  <rect width="4" height="12" x="2" y="9" />
-                  <circle cx="4" cy="4" r="2" />
-                </svg>
-              </a>
-              <a href="#" role="link" target="_blank" aria-label="Visit DuchoFilla on YouTube"
-                class="footer-social-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path
-                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-                  <path d="m10 15 5-3-5-3z" />
-                </svg>
-              </a>
+                        <!-- Company -->
+                        <div class="footer-col">
+                            <div class="footer-nav-title">Company</div>
+                            <ul class="footer-nav-list">
+                                <li>
+                                    <a href="index.html" role="link" target="_self" aria-label="Go to Home"
+                                        class="footer-nav-link">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" role="link" target="_self" aria-label="Learn about us"
+                                        class="footer-nav-link">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#about" role="link" target="_self" aria-label="Learn about 3D Printing"
+                                        class="footer-nav-link">What is 3D Printing?</a>
+                                </li>
+                                <li>
+                                    <a href="work.html" role="link" target="_self" aria-label="View our Work"
+                                        class="footer-nav-link">Work</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" role="link" target="_self" aria-label="Contact us"
+                                        class="footer-nav-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="footer-col">
+                            <div class="footer-nav-title">Stay Updated</div>
+                            <div class="content content-gray mb-16">
+                                <p>Subscribe to our newsletter for product updates, tips, and exclusive offers.</p>
+                            </div>
+                            <form class="flex gap-8" onsubmit="return false;">
+                                <label for="newsletterEmailTC" class="sr-only">Email address</label>
+                                <input type="email"
+                                    id="newsletterEmailTC"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    aria-label="Your email address for newsletter subscription"
+                                    class="footer-newsletter-input" />
+                                <button type="submit"
+                                    aria-label="Subscribe to newsletter"
+                                    class="btn btn-primary btn-shrink py-5!">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-bar">
+                        <p class="footer-copyright">
+                            &copy; 2026 DuchoFilla (Ashirvad Enterprise). All rights reserved.
+                        </p>
+                        <div class="footer-legal-links">
+                            <a href="privacy-policy.html" role="link" target="_self" aria-label="Read our Privacy Policy"
+                                class="footer-legal-link">Privacy Policy</a>
+                            <span class="footer-legal-sep">·</span>
+                            <a href="terms-and-conditions.html" role="link" target="_self" aria-label="Read our Terms and Conditions"
+                                class="footer-legal-link">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- Products -->
-          <div class="footer-col">
-            <div class="footer-nav-title">Products</div>
-            <ul class="footer-nav-list">
-              <li>
-                <a href="#products" role="link" target="_self" aria-label="Browse ABS Filaments"
-                  class="footer-nav-link">ABS</a>
-              </li>
-              <li>
-                <a href="#products" role="link" target="_self" aria-label="Browse ABS Plus Filaments"
-                  class="footer-nav-link">ABS+</a>
-              </li>
-              <li>
-                <a href="#products" role="link" target="_self" aria-label="Browse PLA Filaments"
-                  class="footer-nav-link">PLA</a>
-              </li>
-              <li>
-                <a href="#products" role="link" target="_self" aria-label="Browse PLA Silk Filaments"
-                  class="footer-nav-link">PLA Silk</a>
-              </li>
-              <li>
-                <a href="#products" role="link" target="_self" aria-label="Browse PLA Pro Filaments"
-                  class="footer-nav-link">PLA+ Pro's</a>
-              </li>
-              <li>
-                <a href="#products" role="link" target="_self" aria-label="Browse Flexible TPU Filaments"
-                  class="footer-nav-link">Flexible</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Company -->
-          <div class="footer-col">
-            <div class="footer-nav-title">Company</div>
-            <ul class="footer-nav-list">
-              <li>
-                <a href="#home" role="link" target="_self" aria-label="Learn Home" class="footer-nav-link">Home</a>
-              </li>
-              <li>
-                <a href="#about" role="link" target="_self" aria-label="Learn about us" class="footer-nav-link">About
-                  Us</a>
-              </li>
-              <li>
-                <a href="#" role="link" target="_self" aria-label="Learn about Printing" class="footer-nav-link">What is
-                  3D Printing?</a>
-              </li>
-              <li>
-                <a href="#" role="link" target="_self" aria-label="Learn Work" class="footer-nav-link">Work</a>
-              </li>
-              <li>
-                <a href="#contact" role="link" target="_self" aria-label="Contact us" class="footer-nav-link">Contact
-                  Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="footer-col">
-            <div class="footer-nav-title">Stay Updated</div>
-            <div class="content content-gray mb-16">
-              <p>
-                Subscribe to our newsletter for product updates, tips, and
-                exclusive offers.
-              </p>
-            </div>
-            <form class="flex gap-8" onsubmit="return false;">
-              <label for="newsletterEmail" class="sr-only">Email address</label>
-              <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email"
-                aria-label="Your email address for newsletter subscription" class="footer-newsletter-input" />
-              <button type="submit" aria-label="Subscribe to newsletter" class="btn btn-primary btn-shrink py-5!">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Bar -->
-      <div class="footer-bottom">
-        <div class="footer-bottom-bar">
-          <p class="footer-copyright">
-            &copy; 2026 DuchoFilla (Ashirvad Enterprise). All rights reserved.
-          </p>
-          <div class="footer-legal-links">
-            <a href="#" role="link" target="_self" aria-label="Read our Privacy Policy"
-              class="footer-legal-link">Privacy Policy</a>
-            <span class="footer-legal-sep">·</span>
-            <a href="#" role="link" target="_self" aria-label="Read our Terms and Conditions"
-              class="footer-legal-link">Terms &amp; Conditions</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- ==================== /FOOTER ==================== -->
+        </footer>
+        <!-- ==================== /FOOTER ==================== -->
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <script type="module" src="../assets/js/app.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "swiper": "/node_modules/swiper/swiper-bundle.min.mjs",
+        "glightbox": "/node_modules/glightbox/dist/js/glightbox.min.js"
+      }
+    }
+  </script>
+  <script type="module" src="/assets/js/app.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./assets/css/style.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./assets/css/app.css -o ./dist/style.css --watch",
     "lint:fix": "npx eslint . --fix && npx prettier --write .",
     "prepare": "husky"
   },
@@ -24,6 +24,8 @@
     "@fontsource-variable/instrument-sans": "^5.2.8",
     "@fontsource-variable/inter": "^5.2.8",
     "@tailwindcss/cli": "^4.3.0",
+    "glightbox": "^3.3.1",
+    "swiper": "^12.1.4",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {

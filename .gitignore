@@ -25,3 +25,8 @@ npm-debug.log*
 
 # Misc
 .cache/
+
+.claude
+.serena
+.husky
+.remember
